@@ -4,6 +4,7 @@ class NotesController < ApplicationController
 		@note = Note.new(params[:note])
 		if @note.save
 			UserMailer.note_created_admin(@note).deliver
+		end
 	end
 
 end
