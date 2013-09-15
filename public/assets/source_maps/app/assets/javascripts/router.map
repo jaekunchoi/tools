@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "",
+  "sourceRoot": "",
+  "sources": [
+    "/assets/source_maps/app/assets/javascripts/router.coffee"
+  ],
+  "names": [],
+  "mappings": "AAEA;CAAA,CAAA,CAAG,GAAO,GAAK;CACb,CAAoB,CAAA,CAApB,IAAD,CAAA,EAAA;CACE,CACA,EADA,IAAD,KAAA;CACC,CAAM,EAAN,IAAA,IAAA;CAFmB,OACpB;CADD,IAAqB;CADtB,EAAe;CAAf"
+}

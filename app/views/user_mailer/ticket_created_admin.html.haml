@@ -1,0 +1,19 @@
+= @ticket.user.name 
+
+%table
+	%thead
+		%tr
+			%td Ticket ID
+			%td Title
+			%td Description
+			%td Created at
+	%tbody
+		%tr
+			%td= @ticket.id
+			%td= @ticket.title
+			%td= @ticket.description
+			%td= @ticket.created_at
+
+
+You can view the progress of the ticket at:
+= edit_ticket_url(@ticket)

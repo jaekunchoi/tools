@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "",
+  "sourceRoot": "",
+  "sources": [
+    "/assets/source_maps/app/assets/javascripts/routes/tickets_route.coffee"
+  ],
+  "names": [],
+  "mappings": "AAAA;CAAA,CAAA,CAAG,EAAqB,CAAL,MAAnB;CACC,CAAO,CAAA,CAAP,CAAA,IAAO;CACF,EAAD,CAAH,EAAU,OAAV;CADD,IAAO;CADR,GAAmB;CAAnB"
+}
