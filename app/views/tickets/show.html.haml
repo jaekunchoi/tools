@@ -1,3 +1,5 @@
+%h1 Ticket ID - #{@ticket.id}
+
 %p#notice= notice
 
 %p
@@ -13,3 +15,6 @@
 = link_to 'Edit', edit_ticket_path(@ticket)
 \|
 = link_to 'Back', tickets_path
+
+= render 'notes'
+

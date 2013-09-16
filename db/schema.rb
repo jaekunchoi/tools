@@ -16,9 +16,13 @@ ActiveRecord::Schema.define(:version => 20130915194636) do
   create_table "notes", :force => true do |t|
     t.text     "description"
     t.integer  "ticket_id"
+    t.integer  "user_id"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
   end
+
+  add_index "notes", ["ticket_id"], :name => "index_notes_on_ticket_id"
+  add_index "notes", ["user_id"], :name => "index_notes_on_user_id"
 
   create_table "roles", :force => true do |t|
     t.string   "name"

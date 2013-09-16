@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "",
+  "sourceRoot": "",
+  "sources": [
+    "/assets/source_maps/app/assets/javascripts/rails3_bootstrap_devise_cancan.coffee"
+  ],
+  "names": [],
+  "mappings": "AAAA;CAAA;CAAA"
+}

@@ -16,3 +16,31 @@ puts 'DEFAULT USERS'
 user = User.find_or_create_by_email :name => ENV['ADMIN_NAME'].dup, :email => ENV['ADMIN_EMAIL'].dup, :password => ENV['ADMIN_PASSWORD'].dup, :password_confirmation => ENV['ADMIN_PASSWORD'].dup
 puts 'user: ' << user.name
 user.add_role :admin
+
+puts 'Users'
+user = User.find_or_create_by_email({
+	:name => "Ric Perere",
+	:email => "ric.perere@commstrat.com.au",
+	:password => "perere",
+	:password_confirmation => "perere"
+	});
+
+puts 'Tickets'
+ticket = Ticket.find_or_create_by_title({
+	:title => "First Ticket", 
+	:description => "This is my first ticket",
+	:user_id => 1
+	}, :without_protection => true)
+
+puts 'Notes'
+Note.find_or_create_by_description({
+	:description => "This is the first note",
+	:ticket_id => 1,
+	:user_id => 1
+	}, :without_protection => true)
+
+Note.find_or_create_by_description({
+	:description => "This is the second note",
+	:ticket_id => 1,
+	:user_id => 1
+	}, :without_protection => true)

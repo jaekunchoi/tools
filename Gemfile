@@ -28,7 +28,6 @@ group :development do
   gem 'quiet_assets'
   gem 'guard-rspec'
   gem 'coffee-rails-source-maps'
-  gem 'therubyracer'
 end
 group :development, :test do
   gem 'factory_girl_rails'

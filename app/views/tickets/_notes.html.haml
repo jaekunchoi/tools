@@ -1,0 +1,20 @@
+%br
+
+%h2 Replies
+
+%table{:class => "table table-striped"}
+  %thead
+    %tr
+      %th Id
+      %th Description
+      %th User
+      %th Actions
+  %tbody
+    - @ticket.note.each do |note|
+      %tr
+        %th= note.id
+        %th= note.description
+        %th= note.user.name
+        %th= link_to 'Edit', edit_note_path(note), :class => "btn" 
+
+= link_to 'New', new_note_path, :class => "btn btn-primary"

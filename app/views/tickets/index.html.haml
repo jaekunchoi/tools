@@ -3,22 +3,23 @@
 %table{:class => "table table-striped"}
   %thead
     %tr
+      %th Id
       %th Title
       %th Description
       %th User
-      %th
-      %th
-      %th
+      %th Actions
   %tbody
     - @tickets.each do |ticket|
       %tr
+        %td= ticket.id
         %td= ticket.title
         %td= ticket.description
         %td= ticket.user.name
-        %td= link_to 'Show', ticket, :class => "btn"
-        %td= link_to 'Edit', edit_ticket_path(ticket), :class => "btn"
-        %td= link_to 'Destroy', ticket, {:method => :delete, :class => "btn btn-danger", :data => { :confirm => 'Are you sure?' }}
+        %td
+          = link_to 'Show', ticket, :class => "btn btn-small" 
+          = link_to 'Edit', edit_ticket_path(ticket), :class => "btn btn-small"
+          = link_to 'Destroy', ticket, {:method => :delete, :class => "btn btn-danger btn-small", :data => { :confirm => 'Are you sure?' }}
 
 %br
 
-= link_to 'New Ticket', new_ticket_path
+= link_to 'New Ticket', new_ticket_path, :class => "btn btn-primary"

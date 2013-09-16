@@ -16,7 +16,6 @@
 //= require handlebars
 //= require ember
 //= require ember-data
-//= require socket.io
 //= require_self
 //= require app
 
